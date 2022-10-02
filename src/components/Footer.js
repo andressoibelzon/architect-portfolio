@@ -18,7 +18,7 @@ export const Footer = () => {
                     <Col sm={6}>
                         <div className="social-icon">
                             <a href="https://www.linkedin.com/in/andres-soibelzon-06b14b191/"  target="_blank"><GrLinkedinOption color="white"/></a>
-                            <a href="https://github.com/andressoibelzon"  target="_blank"><GoMarkGithub color="white"/></a>
+                            {/* <a href="https://github.com/andressoibelzon"  target="_blank"><GoMarkGithub color="white"/></a> */}
                         </div>
                     </Col>
                     <Col sm={6}>

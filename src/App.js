@@ -1,11 +1,13 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner"
-import { Skills } from './components/Skills';
-import { Projects } from './components/Projects';
-import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { Home } from './components/Home';
+import { Services } from './components/Services';
+import { Courses } from './components/Courses';
+import { Contact } from './components/Contact';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 
 
 
@@ -13,11 +15,24 @@ import { Footer } from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Banner />
-      <Skills />
-      <Projects />
-      <Contact />
+
+
+      <BrowserRouter>
+
+        <NavBar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/contact" element={<Contact />} />
+
+
+
+
+        </Routes>
+      </BrowserRouter>
+
       <Footer />
     </div>
   );

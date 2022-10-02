@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "Web Developer", "Web Designer", "Architect"];
+    const toRotate = [ "Renders", "Videos", "Brochures", "Recorrido Virtual", "Pagina Web", "Plantas Pintadas", "Axonometricas"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random()*100);
     const period = 2000;
@@ -46,14 +45,14 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <h1>{`Hi I'm Andy Soibelzon `}
+                        <h1>{/*`SOIBELZON ARQ `*/}
                         <span className="wrap">{text}</span>
                         </h1>
-                            <p>I am passionate about web development and consider myself as a designer. I am a certified Architect, learning and working with coding since 2021. I have a constant search to improve in my personal and working life, with many goals to reach. My working experience strengthen to become a person who is totally comitted in daily work and attemp to give the best.</p>
-                            <button onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
+                            <p>Estudio de arquitectura con gran jerarquia en promociones de <b>Real State y Proyectos de Arquitectura</b> para <b> buscar el maximo potencial.</b> </p>
+                            <button onClick={()=> console.log('connect')}>Conecta <ArrowRightCircle size={25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header Img" />
+                        {/* <img src={headerImg} alt="Header Img" /> */}
                     </Col>
                 </Row>
             </Container>
